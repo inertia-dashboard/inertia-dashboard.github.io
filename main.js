@@ -74,7 +74,7 @@ function showPosition(position){
 
 var getWeather = function(mylat, mylong) {
     gettingData = true;
-    var requestString = "http://api.openweathermap.org/data/2.5/weather?lat="
+    var requestString = "https://api.openweathermap.org/data/2.5/weather?lat="
                         + mylat + "&lon=" + mylong  
                         + "&APPID=68857f90d32a5dd13ead22ecc79f8af8";
     request = new XMLHttpRequest();
