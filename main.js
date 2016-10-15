@@ -75,7 +75,7 @@ quoteArray[18] = "life is a series of closing doors";
 
 
 function getQuote(){
-	var i = Math.floor(Math.random() * 9);
+	var i = Math.floor(Math.random() * 18);
 	var element = document.getElementById("quotebox");
 	console.log(quoteArray[i]);
 	element.innerHTML = "\"" + quoteArray[i] + "\"";
