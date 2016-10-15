@@ -35,8 +35,9 @@ function getImage(){
 var quoteArray = new Array();
 quoteArray[0] = "things aren't looking good today.";
 quoteArray[1] = "everybody you know is going to die.";
+quoteArray[2] = "tech is a bubble.";
 function getQuote(){
-	var i = Math.floor(Math.random() * 2);
+	var i = Math.floor(Math.random() * 3);
 	var element = document.getElementById("quotebox");
 	console.log(quoteArray[i]);
 	element.innerHTML = quoteArray[i];
