@@ -64,6 +64,14 @@ quoteArray[7] = "you can't make toast back into bread";
 quoteArray[8] = "i think we are just insects, we live a bit and then die and that is the lot. there is no mercy in things. there is not even a great beyond. there is nothing";
 quoteArray[9] = "this is not going to work";
 quoteArray[10] = "tons of people die for no reason, that's what makes life so terrifying";
+quoteArray[11] = "to live is to suffer, to survive is to find meaning in the sufferring";
+quoteArray[12] = "you dont hate people, you just prefer when they're not around";
+quoteArray[13] = "its so sad that when you see someone as they really are, it ruins them";
+quoteArray[14] = "sometimes you wake up, some times you don't";
+quoteArray[15] = "dont worry about the likes, just make sure you get a good instagram out of this";
+quoteArray[16] = "josh peck is still alive";
+quoteArray[17] = "i spend a lot of time with the real me and believe me nobody is gonna fall in love with that guy";
+quoteArray[18] = "life is a series of closing doors";
 
 
 function getQuote(){
