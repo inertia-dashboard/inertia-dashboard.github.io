@@ -26,9 +26,10 @@ body {
 	opacity: 1;
 	display: block;
 	position: absolute;
+		text-shadow: none;
         top: 8px;
         right: 16px;
-        font-size: 25px;
+        font-size: 20px;
         word-wrap: break-word;
         width: 300px;
         text-align: right;
