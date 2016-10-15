@@ -63,3 +63,14 @@ body {
 	font-size: 10px;
 	text-shadow: none;
 }
+
+#twitterbutton {
+	opacity: 1;
+	display: block;
+	position: absolute;
+	z-index: 99;
+	bottom: 8px;
+    	right: 16px;
+
+}
+
