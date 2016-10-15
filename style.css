@@ -17,22 +17,22 @@ body {
 	display: block;
 	font-size: 25px;
 	position: absolute;
-        bottom: 10px;
-        width: 100%;
-        text-align: center;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
 }
 
 #temperaturebox {
 	opacity: 1;
 	display: block;
 	position: absolute;
-		text-shadow: none;
-        top: 8px;
-        right: 16px;
-        font-size: 20px;
-        word-wrap: break-word;
-        width: 300px;
-        text-align: right;
+	text-shadow: none;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+	word-wrap: break-word;
+	width: 300px;
+	text-align: right;
 }
 
 #time {
