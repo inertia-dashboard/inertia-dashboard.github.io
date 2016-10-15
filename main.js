@@ -47,7 +47,7 @@ quoteArray[4] = "death is inevitable";
 quoteArray[5] = "fame is a vapor, the only certainty in life is oblivion";
 quoteArray[6] = "some fish spend their whole lives swimming upstream only to be eaten by a bear";
 quoteArray[7] = "you can't make toast back into bread";
-quoteArray[8] = "i think we are just insects, we live a bit and then die and that’s the lot. there’s no mercy in things. there’s not even a great beyond. there’s nothing";
+quoteArray[8] = "i think we are just insects, we live a bit and then die and that is the lot. there is no mercy in things. there is not even a great beyond. there is nothing";
 quoteArray[9] = "this is not going to work";
 
 function getQuote(){
