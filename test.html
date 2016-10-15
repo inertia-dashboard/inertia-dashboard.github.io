@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+</head>
+        <body onload="init()">
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBI8cYoSsuimNSwFpom6wmSu1XUJ2t5jNk"></script>
+
+                this is a test
+
+
+<script>
+var request = new XMLHttpRequest();
+var mylat = 0;
+var mylong = 0;
+var me = new google.maps.LatLng(mylat, mylong);
+var map;
+var lat = 0;
+var lng = 0;
+
+function init() {
+        console.log("init starting");
+        getMyLocation();
+}
+
+/* function getMyLocation() {
+        console.log("started getMyLocation");
+        if (navigator.geolocation) {
+                console.log("about to try to get pos");
+                navigator.geolocation.getCurrentPosition(function (position) {
+                        mylat = position.coords.latitude;
+                        mylong = position.coords.longitude;
+                        console.log(mylat + " and " + mylong);
+                        renderMap();
+                });
+        } else {
+                console.log("it got to here but not somewhere. watever chris said");
+                alert("Geolocation is not supported by your web browser. What a shame!")
+        }
+        console.log("returning from getMyLocation");
+} */
+
+function getMyLocation(){
+
+        console.log("starting getmyloc");
+        if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position){
+        console.log("got position");
+        getWeather(position.coords.latitude, position.coords.longitude);
+}
+
+
+var getWeather = function(mylat, mylng) {
+    gettingData = true;
+    var requestString = "http://api.openweathermap.org/data/2.5/weather?lat="
+                        + mylat + "&lon" + mylng + 
+                        + "&APPID=35f169196cfcbb2a78bc505ceb3634a5";
+    request = new XMLHttpRequest();
+    request.onload = proccessResults;
+    request.open("get", requestString, true);
+    request.send();
+};
+
+  var proccessResults = function() {
+    console.log(this);
+    var results = JSON.parse(this.responseText);
+    var temperature = results.main.temp;
+  };
+
+                </script>
+        </body>
+
+</html>
+
