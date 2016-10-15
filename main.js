@@ -72,6 +72,8 @@ function getQuote(){
 	element.innerHTML = "\"" + quoteArray[i] + "\"";
 }
 
+
+
 function getLiveTime() {
 	var today = new Date();
     var h = today.getHours();

@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "main.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   
+   "description": "Replace new tab page with a personal dashboard featuring death.",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "48": "icon-48.png"
+   },
+   
+   "name": "Inertia",
+   "offline_enabled": true,
+   "permissions": [ "geolocation", "unlimitedStorage", "*://*.yahooapis.com/*"],
+   "short_name": "Inertia",
+
+}
