@@ -20,20 +20,25 @@ imageArray[8].src = 'images/beautifulYetStarkMountain.jpg';
 
 function init(){
         getImage();
+        getQuote();
+        //getTime();
 }
 
 function getImage(){
-        var i = Math.random() * 8;
-        console.log(i);
-        //background image = imageArray[i];
+        var i = Math.floor(Math.random() * 9);
         var background = new Image();
-        background = imageArray[i];
-        console.log(background);
+        background = "url('" + imageArray[i].src + "')";
         document.body.style.backgroundImage = background;
 }
 
-var quoteArray = new Array();
-quoteArray[0] = "Things aren't looking good today";
-function getQuote(){
 
+var quoteArray = new Array();
+quoteArray[0] = "things aren't looking good today.";
+quoteArray[1] = "everybody you know is going to die.";
+function getQuote(){
+	var i = Math.floor(Math.random() * 2);
+	var element = document.getElementById("quotebox");
+	console.log(quoteArray[i]);
+	element.innerHTML = quoteArray[i];
+	//$("quotebox").prepend("<p>" + quoteArray[i] + "<p>");
 }

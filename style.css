@@ -1,0 +1,15 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-size: 1024px 768px;
+	background-repeat: no-repeat;
+}
+
+quotebox {
+	font-family: comic-sans;
+}
