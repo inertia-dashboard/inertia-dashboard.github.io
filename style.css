@@ -8,28 +8,40 @@ body {
 	padding: 0px;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-}
-
-.quotebox {
-	font-family: comic-sans;
-	text-shadow: 0 1px 5px rgba(0,0,0,.1);
-	opacity: 1;
-	display: block;
-	font-size: 50px;
-}
-
-.temperature {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#quotebox {
 	opacity: 1;
 	display: block;
-	font-size: 50px;
+	font-size: 40px;
+	position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+}
+
+#temperaturebox {
+	opacity: 1;
+	display: block;
+	position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 25px;
+        word-wrap: break-word;
+        width: 300px;
+        text-align: right;
 }
 
 #time {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-shadow: 0 1px 5px rgba(0,0,0,.1);
 	opacity: 1;
 	display: block;
-	font-size: 50px;
+	font-size: 150px;
+	position: absolute;
+        left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+
 }
