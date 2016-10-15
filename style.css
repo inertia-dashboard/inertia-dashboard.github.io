@@ -46,7 +46,6 @@ body {
 
 }
 
-<<<<<<< HEAD
 #welcome {
 	opacity: 1;
 	display: block;
@@ -59,13 +58,12 @@ body {
 }
 
 
-
-
-
-=======
 #imagetitle {
 	opacity: 1;
+	display: block;
+	position: absolute;
+	left: 6px;
 	font-size: 10px;
 	text-shadow: none;
 }
->>>>>>> 367baa7c98726a0c1a9489aa7234a2ab42ae2c65
+
