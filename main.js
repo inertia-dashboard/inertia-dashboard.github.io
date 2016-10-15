@@ -92,14 +92,12 @@ function checkTime(i) {
 
 
 function initialize(){
-        console.log("init starting");
         getMyLocation();    
 }
 
 
 function getMyLocation(){
 
-    console.log("starting getmyloc");
     if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(showPosition);
     } else {
@@ -114,6 +112,7 @@ function showPosition(position){
 
 
 var getWeather = function(mylat, mylong) {
+    console.log("getWeather starting");
     gettingData = true;
     var requestString = "http://api.openweathermap.org/data/2.5/weather?lat="
                         + mylat + "&lon=" + mylong  
@@ -121,6 +120,8 @@ var getWeather = function(mylat, mylong) {
     request = new XMLHttpRequest();
     request.onload = proccessResults;
     request.open("get", requestString, true);
+  //  request.setRequestHeader('Access-Control-Allow-Origin','*');
+   
     request.send();
 
         console.log("lat is " + mylat);
@@ -128,6 +129,7 @@ var getWeather = function(mylat, mylong) {
 };
 
 var proccessResults = function() {
+    console.log("processResults");
     console.log(this);
     var results = JSON.parse(this.responseText);
     var temperature = results.main.temp; /* units are in kelvin lol */
