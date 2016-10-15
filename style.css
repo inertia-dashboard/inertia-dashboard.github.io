@@ -15,9 +15,9 @@ body {
 #quotebox {
 	opacity: 1;
 	display: block;
-	font-size: 40px;
+	font-size: 25px;
 	position: absolute;
-        bottom: 8px;
+        bottom: 10px;
         width: 100%;
         text-align: center;
 }
@@ -45,3 +45,19 @@ body {
 	text-align: center;
 
 }
+
+#welcome {
+	opacity: 1;
+	display: block;
+	font-size: 30px;
+	position: absolute;
+        left: 0;
+	top: 64%;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
