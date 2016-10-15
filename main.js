@@ -117,7 +117,7 @@ function showPosition(position){
 var getWeather = function(mylat, mylong) {
     console.log("getWeather starting");
    
-    var ourURL = "http://still-bayou-54198.herokuapp.com/temperature?lat=" + mylat + "&lon=" + mylong;
+    var ourURL = "https://still-bayou-54198.herokuapp.com/temperature?lat=" + mylat + "&lon=" + mylong;
     console.log(ourURL);
     request = new XMLHttpRequest(), method = "GET", url = ourURL;
     request.onreadystatechange = proccessResults;
