@@ -98,7 +98,17 @@ function showPosition(position){
 
 var getWeather = function(mylat, mylong) {
     console.log("getWeather starting");
-    gettingData = true;
+   
+    var ourURL = "http://still-bayou-54198.herokuapp.com/temperature?lat=" + mylat + "&lon=" + mylong;
+    console.log(ourURL);
+    request = new XMLHttpRequest(), method = "GET", url = ourURL;
+    request.onreadystatechange = proccessResults;
+    console.log(method, url);
+    request.open(method, url);
+   
+    request.send();
+
+   /* gettingData = true;
     var requestString = "http://api.openweathermap.org/data/2.5/weather?lat="
                         + mylat + "&lon=" + mylong  
                         + "&APPID=68857f90d32a5dd13ead22ecc79f8af8";
@@ -107,16 +117,19 @@ var getWeather = function(mylat, mylong) {
     request.open("get", requestString, true);
   //  request.setRequestHeader('Access-Control-Allow-Origin','*');
    
-    request.send();
-
-        console.log("lat is " + mylat);
-        console.log("long is " + mylong);
+    request.send(); */
+    console.log("getWeather ending");
 };
 
-var proccessResults = function() {
-    console.log("processResults");
-    console.log(this);
-    var results = JSON.parse(this.responseText);
+var proccessResults = function(e) {
+    var results;
+    if (this.readyState === 4 ) {
+        console.log(this);
+        results = JSON.parse(this.responseText);
+    } else {
+        return;
+    }
+    
     var temperature = results.main.temp; /* units are in kelvin lol */
     var element = document.getElementById("temperaturebox");
     temperature = (Math.floor(1.8 * (temperature - 273) +32)); 
