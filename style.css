@@ -45,3 +45,9 @@ body {
 	text-align: center;
 
 }
+
+#imagetitle {
+	opacity: 1;
+	font-size: 10px;
+	text-shadow: none;
+}
