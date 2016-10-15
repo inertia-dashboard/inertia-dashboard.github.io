@@ -37,6 +37,7 @@ function init() {
         getQuote();
         getLiveTime();
         initialize();
+        //hideWelcome();
 }
 
 function getImage(){
@@ -152,8 +153,4 @@ var proccessResults = function() {
     element.innerHTML = weatherText;
 
 };
-
-
-
-
 
