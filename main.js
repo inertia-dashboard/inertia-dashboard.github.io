@@ -49,11 +49,7 @@ var request = new XMLHttpRequest();
 var mylat = 0;
 var mylong = 0;
 var me = new google.maps.LatLng(mylat, mylong);
-
-function init() {
-        console.log("init starting");
-        getMyLocation();    
-}
+var temperature;
 
 
 function getMyLocation(){
@@ -89,7 +85,7 @@ var getWeather = function(mylat, mylong) {
 var proccessResults = function() {
     console.log(this);
     var results = JSON.parse(this.responseText);
-    var temperature = results.main.temp; /* units are in kelvin lol */
+    temperature = results.main.temp; /* units are in kelvin lol */
     temperature = (1.8 * (temperature - 273) +32); 
 
     console.log("temp right now is: " + temperature);
