@@ -6,10 +6,30 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-size: 1024px 768px;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
-quotebox {
+.quotebox {
 	font-family: comic-sans;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	opacity: 1;
+	display: block;
+	font-size: 50px;
+}
+
+.temperature {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	opacity: 1;
+	display: block;
+	font-size: 50px;
+}
+
+#time {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	opacity: 1;
+	display: block;
+	font-size: 50px;
 }
