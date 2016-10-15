@@ -6,22 +6,31 @@ var me = new google.maps.LatLng(mylat, mylong);
 var imageArray = new Array();
 imageArray[0] = new Image();
 imageArray[0].src = 'images/beautifulMountains.jpg';
+imageArray[0].alt = "beautiful mountains by josh berl";
 imageArray[1] = new Image();
 imageArray[1].src = 'images/beautifulBeach.jpg';
+imageArray[1].alt = "beautiful beach by josh berl";
 imageArray[2] = new Image();
 imageArray[2].src = 'images/beautifulForestFilledWithTrees.jpg';
+imageArray[2].alt = "beautiful forest filled with trees by josh berl";
 imageArray[3] = new Image();
 imageArray[3].src = 'images/beautifulHillside.jpg';
+imageArray[3].alt = "beautiful hillside by josh berl";
 imageArray[4] = new Image();
 imageArray[4].src = 'images/beautifulMountainsWithRiver.jpg';
+imageArray[4].alt = "beautiful mountains with river by josh berl";
 imageArray[5] = new Image();
 imageArray[5].src = 'images/beautifulOceanView.jpg';
+imageArray[5].alt = "beautiful ocean view by josh berl";
 imageArray[6] = new Image();
 imageArray[6].src = 'images/beautifulRollingHills.jpg';
+imageArray[6].alt = "beautiful rolling hills by josh berl";
 imageArray[7] = new Image();
 imageArray[7].src = 'images/beautifulTreeAndSunset.jpg';
+imageArray[7].alt = "beautiful tree and sunset by josh berl";
 imageArray[8] = new Image();
 imageArray[8].src = 'images/beautifulYetStarkMountain.jpg';
+imageArray[8].alt = "beautiful yet stark mountain by josh berl";
 
 function init() {
         getImage();
@@ -33,8 +42,12 @@ function init() {
 function getImage(){
         var i = Math.floor(Math.random() * 9);
         var background = new Image();
+        background = imageArray[i];
+        var imagename = background.alt;
         background = "url('" + imageArray[i].src + "')";
         document.body.style.backgroundImage = background;
+        var e = document.getElementById("imagetitle");
+        e.innerHTML = imagename;
 }
 
 
@@ -49,6 +62,8 @@ quoteArray[6] = "some fish spend their whole lives swimming upstream only to be 
 quoteArray[7] = "you can't make toast back into bread";
 quoteArray[8] = "i think we are just insects, we live a bit and then die and that is the lot. there is no mercy in things. there is not even a great beyond. there is nothing";
 quoteArray[9] = "this is not going to work";
+quoteArray[10] = "tons of people die for no reason, that's what makes life so terrifying";
+
 
 function getQuote(){
 	var i = Math.floor(Math.random() * 9);
