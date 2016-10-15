@@ -1,0 +1,27 @@
+{
+
+
+
+   "background": {
+      "persistent": false,
+      "scripts": [ "main.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   
+   "description": "Replace new tab page with a personal dashboard featuring bad things.",
+   "icons": {
+      "128": "inertiaFavicon.png",
+      "16": "inertiaFavicon.png",
+      "48": "inertiaFavicon.png"
+   },
+   
+   "manifest_version": 2,
+   "version": "1.0",
+   "name": "Inertia",
+   "offline_enabled": true,
+   "permissions": [ "geolocation", "unlimitedStorage", "*://*.yahooapis.com/*"],
+   "short_name": "Inertia"
+
+}

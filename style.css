@@ -15,23 +15,34 @@ body {
 #quotebox {
 	opacity: 1;
 	display: block;
-	font-size: 40px;
+	font-size: 25px;
 	position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
 }
 
 #temperaturebox {
 	opacity: 1;
 	display: block;
 	position: absolute;
+<<<<<<< HEAD
         top: 8px;
         right: 16px;
         font-size: 25px;
         word-wrap: break-word;
         width: 300px;
         text-align: right;
+        text-shadow: none;
+=======
+	text-shadow: none;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+	word-wrap: break-word;
+	width: 300px;
+	text-align: right;
+>>>>>>> a8ff7edc1c677ff862db75377a27c4a9899c068e
 }
 
 #time {
@@ -44,4 +55,20 @@ body {
 	width: 100%;
 	text-align: center;
 
+}
+
+#welcome {
+	opacity: 1;
+	font-size: 10px;
+	text-shadow: none;
+}
+
+
+#imagetitle {
+	opacity: 1;
+	display: block;
+	position: absolute;
+	left: 6px;
+	font-size: 10px;
+	text-shadow: none;
 }
