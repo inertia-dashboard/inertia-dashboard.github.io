@@ -68,10 +68,9 @@ quoteArray[11] = "to live is to suffer, to survive is to find meaning in the suf
 quoteArray[12] = "you dont hate people, you just prefer when they're not around";
 quoteArray[13] = "its so sad that when you see someone as they really are, it ruins them";
 quoteArray[14] = "sometimes you wake up, some times you don't";
-quoteArray[15] = "dont worry about the likes, just make sure you get a good instagram out of this";
-quoteArray[16] = "josh peck is still alive";
-quoteArray[17] = "i spend a lot of time with the real me and believe me nobody is gonna fall in love with that guy";
-quoteArray[18] = "life is a series of closing doors";
+quoteArray[15] = "josh peck is still alive";
+quoteArray[16] = "i spend a lot of time with the real me and believe me nobody is gonna fall in love with that guy";
+quoteArray[17] = "life is a series of closing doors";
 
 
 function getQuote(){
